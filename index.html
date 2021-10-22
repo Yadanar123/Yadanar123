@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <title>OTP Generator</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-8 bg-primary text-white pt-3">
+                <label for="phone" class="d-block text-center">Enter your phone number</label>
+                <input type="phone" class="form-control my-3" placeholder="Enter your phone number" id="phone">
+                <button class="btn btn-info d-block mx-auto mb-3" onclick="getOTP(6,{specialChars:false})" id="send">Send</button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <h1 id="result"></h1>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
